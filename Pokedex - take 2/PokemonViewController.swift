@@ -19,6 +19,10 @@ class PokemonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Clear the text so it doesnt show placeholders
+        type1Label.text = ""
+        type2Label.text = ""
+        
         let url = URL(string: pokemon.url)
         
         //Data cannot be optional
